@@ -213,5 +213,38 @@ header
 
 hr {
     border: 1px solid grey;
+}   
+
+/* Existing styles remain untouched */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 750px) {
+    body {
+        width: 90%; /* Adjust the width for smaller screens */
+        margin: auto; /* Center the content */
+    }
+
+    header {
+        flex-direction: column; /* Stack the navigation on top */
+        align-items: center;
+    }
+
+    #navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Update specific elements to adapt to smaller screens */
+    #logo {
+        width: 200px; /* Adjust the size of the logo */
+        padding: 10px; /* Decrease padding */
+    }
+
+    .gallery img,
+    .works [class^="w"],
+    .content img,
+    .imgabout {
+        width: 100%; /* Make images responsive for smaller screens */
+    }
 }
 
