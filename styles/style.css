@@ -215,37 +215,36 @@ hr {
     border: 1px solid grey;
 }   
 
-/* Your existing CSS styles here */
+/* Existing styles remain untouched */
 
-/* Add the responsive CSS below your existing styles */
+/* Media query for smaller screens */
+@media screen and (max-width: 750px) {
+    body {
+        width: 90%; /* Adjust the width for smaller screens */
+        margin: auto; /* Center the content */
+    }
 
-/* Common styles for smaller screens */
-#logo,
-#personalimg,
-.imgabout,
-.contact img,
-.resume img,
-.gallery img,
-.works [class^="w"],
-.content img,
-.content .education img,
-.content .skills img {
-    width: 100%; /* Ensures the image fills its container */
-    max-width: 100%; /* Resizes the image to fit its container while maintaining aspect ratio */
-    height: auto; /* Maintains the image's aspect ratio */
-}
+    header {
+        flex-direction: column; /* Stack the navigation on top */
+        align-items: center;
+    }
 
-/* Media query for larger screens */
-@media screen and (min-width: 750px) {
-    /* Adjust styles for larger screens */
-    /* Example: Set specific widths, heights, margins, etc. */
+    #navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Update specific elements to adapt to smaller screens */
     #logo {
-        /* Add your styles for larger screens here */
+        width: 200px; /* Adjust the size of the logo */
+        padding: 10px; /* Decrease padding */
     }
 
-    #personalimg {
-        /* Add your styles for larger screens here */
+    .gallery img,
+    .works [class^="w"],
+    .content img,
+    .imgabout {
+        width: 100%; /* Make images responsive for smaller screens */
     }
-
-    /* Repeat the same pattern for other elements you want to adjust */
 }
+
