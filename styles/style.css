@@ -112,6 +112,12 @@ header
     transition: transform 1s, box-shadow 1s;
 }
 
+.works img {
+    width: 400px;
+    height: auto;
+    transition: transform 1s, box-shadow 1s;
+}
+
 .gallery img:hover {
     transform: scale(1.1);
 }
@@ -213,7 +219,7 @@ header
 
 hr {
     border: 1px solid grey;
-}   
+}
 
 /* Existing styles remain untouched */
 
@@ -247,4 +253,3 @@ hr {
         width: 100%; /* Make images responsive for smaller screens */
     }
 }
-
